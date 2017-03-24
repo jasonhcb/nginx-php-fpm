@@ -1,12 +1,12 @@
 # Zentaopms-php-nginx
 
-镜像版本: `php:7.1.2-fpm-alpine`
+**镜像版本: **`php:7.1.2-fpm-alpine`
 
 | Nginx Version | PHP Version | Alpine Version | Container Scripts |
 | :--- | :--- | :--- | :--- |
 | 1.11.10 | 7.1.2 | 3.4 | 0.2.6 |
 
-对于git可配置环境变量：-e flag:
+**对于git可配置环境变量**：-e flag:
 
 * **GIT\_REPO **: git仓库地址，比如：[https://github.com/project/](https://github.com/project/)   ssh 方式： [git@github.com](mailto:git@github.com):project.git
 
@@ -24,10 +24,12 @@
 
 * **GIT\_USERNAME **: Git username for use with personal tokens. \(required for HTTPS git access\)
 
-* **WEBROOT**: Change the default webroot directory from
-  `/var/www/html`
+* **WEBROOT**: Change the default webroot directory from  
+  `/var/www/html`  
   to your own setting（默认代码存放路径）
+
 * **ERRORS **: Set to 1 to display PHP Errors in the browser\(PHP错误机制\)
+
 * **HIDE\_NGINX\_HEADERS **: Disable by setting to 0, default behaviour is to hide nginx + php version in headers
 * **PHP\_MEM\_LIMIT **: Set higher PHP memory limit, default is 128 Mb（PHP 设置内存最大限制）
 * **PHP\_POST\_MAX\_SIZE **: Set a larger post\_max\_size, default is 100 Mb （PHP 设置传值最大上传大小\)
@@ -41,10 +43,36 @@
 * **REAL\_IP\_FROM**: set to your CIDR block for real ip in logs
 
 * **RUN\_SCRIPTS**: Set to 1 to execute scripts
+
 * **PGID**: Set to GroupId you want to use for nginx \(helps permissions when using local volume\)
+
 * **PUID**: Set to UserID you want to use for nginx \(helps permissions when using local volume\)
 * **REMOVE\_FILES**
   : Use REMOVE\_FILES=0 to prevent the script from clearing out /var/www/html \(useful for working with local files\)\(挂载卷\)
+
+**详细配置信息：**
+
+* [Introduction](README.md)
+* [Git Auth](git_auth.md)
+* [Personal Access token](git_auth.md)
+* [SSH Keys](git_auth.md)
+* [Git Commands](git_commands.md)
+* [Push](git_commands.md)
+* [Pull](git_commands.md)
+* [Repository Layout Guidelines](repo_layout.md)
+* [webroot](repo_layout.md)
+* [User / Group Identifiers](repo_layout.md)
+* [Custom Nginx Config files](nginx_configs.md)
+* [REAL IP / X-Forwarded-For Headers](nginx_configs.md)
+* [Scripting and Templating](scripting_templating.md)
+* [Environment Variables](scripting_templating.md)
+* [Lets Encrypt Support](lets_encrypt.md)
+* [Setup](lets_encrypt.md)
+* [Renewal](lets_encrypt.md)
+* [PHP Modules](php_modules.md)
+* [Logging and Errors](logs.md)
+
+**搭建方式：**
 
 
 
