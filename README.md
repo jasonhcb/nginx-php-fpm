@@ -1,4 +1,4 @@
-# My Awesome Book
+# Zentaopms-php-nginx
 
 镜像版本: `php:7.1.2-fpm-alpine`
 
@@ -21,7 +21,9 @@
 * **SSH\_KEY **: Private SSH deploy key for your repository base64 encoded \(requires write permissions for pushing\)
 
 * **GIT\_PERSONAL\_TOKEN **: Personal access token for your git account \(required for HTTPS git access\)
+
 * **GIT\_USERNAME **: Git username for use with personal tokens. \(required for HTTPS git access\)
+
 * **WEBROOT**: Change the default webroot directory from
   `/var/www/html`
   to your own setting（默认代码存放路径）
@@ -35,7 +37,9 @@
 * **DOMAIN**: Set domain name for Lets Encrypt scripts\(设置访问地址\)
 
 * **REAL\_IP\_HEADER**: set to 1 to enable real ip support in the logs
+
 * **REAL\_IP\_FROM**: set to your CIDR block for real ip in logs
+
 * **RUN\_SCRIPTS**: Set to 1 to execute scripts
 * **PGID**: Set to GroupId you want to use for nginx \(helps permissions when using local volume\)
 * **PUID**: Set to UserID you want to use for nginx \(helps permissions when using local volume\)
