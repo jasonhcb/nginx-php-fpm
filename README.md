@@ -19,6 +19,7 @@
 * **GIT\_USE\_SSH **: Set this to 1 if you want to use git over SSH \(instead of HTTP\), useful if you want to use Bitbucket instead of GitHub
 
 * **SSH\_KEY **: Private SSH deploy key for your repository base64 encoded \(requires write permissions for pushing\)
+
 * **GIT\_PERSONAL\_TOKEN **: Personal access token for your git account \(required for HTTPS git access\)
 * **GIT\_USERNAME **: Git username for use with personal tokens. \(required for HTTPS git access\)
 * **WEBROOT**: Change the default webroot directory from
@@ -32,6 +33,7 @@
 * **PHP\_UPLOAD\_MAX\_FILESIZE**: Set a larger upload\_max\_filesize, default is 100 Mb（PHP设置最大下载大小）
 
 * **DOMAIN**: Set domain name for Lets Encrypt scripts\(设置访问地址\)
+
 * **REAL\_IP\_HEADER**: set to 1 to enable real ip support in the logs
 * **REAL\_IP\_FROM**: set to your CIDR block for real ip in logs
 * **RUN\_SCRIPTS**: Set to 1 to execute scripts
