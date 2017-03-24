@@ -31,6 +31,7 @@
 * **ERRORS **: Set to 1 to display PHP Errors in the browser\(PHP错误机制\)
 
 * **HIDE\_NGINX\_HEADERS **: Disable by setting to 0, default behaviour is to hide nginx + php version in headers
+
 * **PHP\_MEM\_LIMIT **: Set higher PHP memory limit, default is 128 Mb（PHP 设置内存最大限制）
 * **PHP\_POST\_MAX\_SIZE **: Set a larger post\_max\_size, default is 100 Mb （PHP 设置传值最大上传大小\)
 
@@ -47,10 +48,11 @@
 * **PGID**: Set to GroupId you want to use for nginx \(helps permissions when using local volume\)
 
 * **PUID**: Set to UserID you want to use for nginx \(helps permissions when using local volume\)
+
 * **REMOVE\_FILES**
   : Use REMOVE\_FILES=0 to prevent the script from clearing out /var/www/html \(useful for working with local files\)\(挂载卷\)
 
-**详细配置信息：**
+## 配置
 
 * [Introduction](README.md)
 * [Git Auth](git_auth.md)
@@ -72,7 +74,10 @@
 * [PHP Modules](php_modules.md)
 * [Logging and Errors](logs.md)
 
-**搭建方式：**
+## 搭建
+
+* [Running in Kubernetes](guides/kubernetes.md)
+* [Using Docker Compose](guides/docker_compose.md)
 
 
 
